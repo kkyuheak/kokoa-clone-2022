@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - KoKoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar_column">
+            <span>No Service</span>
+            <!--To Do: Wifi Icon -->
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar_column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar_column">
+            <span>100%</span>
+            <!--Battery Icon-->
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <!--Lighting Icon-->
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header_title">Find</h1>
+        <div class="screen-header_icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><div class="point"></div><i class="fa-solid fa-gear fa-lg"></i></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons_icon"><i class="fa-solid fa-qrcode"></i><span>Qr Code</span></div>
+            <div class="find-icons_icon"><i class="fa-regular fa-address-book"></i><span>Add by Contacts</span></div>
+            <div class="find-icons_icon"><i class="fa-solid fa-fingerprint"></i><span>Add by ID</span></div>
+            <div class="find-icons_icon"><i class="fa-regular fa-envelope"></i><span>Invite</span></div>
+        </div>
+
+        <div class="recommended-friends">
+            <h6 class="recommended-friends_title">Recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+    </main>
+
+
+
+    
+
+    <nav class="nav">
+        <ul class="nav_list">
+            <li class="nav_btn">
+                <a class="nav_link" href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav_link" href="chats.html">
+                    <span class="nav_notification badge">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav_link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav_link" href="more.html">
+                    <span class="nav_noti"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/92af46884b.js" crossorigin="anonymous"></script>
+</body>
+</html>
