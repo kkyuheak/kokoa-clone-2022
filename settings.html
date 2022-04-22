@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats - KoKoa Clone</title>
+    <title>Settings - KoKoa Clone</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -26,34 +26,52 @@
         </div>
     </div>
 
-    <header class="screen-header">
-        <h1 class="screen-header_title">Chats</h1>
-        <div class="screen-header_icons">
+    <header class="alt-header fu-header">
+        <div class="alt-header_column">
+            <a href="more.html">
+            <i class="fa-solid fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header_column">
+            <h1 class="alt-header_title">Settings</h1>
+        </div>
+        <div class="alt-header_column">
             <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-            <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-            <span><i class="fa-solid fa-music fa-lg"></i></span>
-            <span><i class="fa-solid fa-gear fa-lg"></i></span>
         </div>
     </header>
 
 
     <main class="main-screen">
-        <a href="chat.html">
-        <div class="user-component">
-            <div class="user-component_column">
-                <img src="/img/KakaoTalk_20210727_225548058.jpg" class="user-component_avatar user-component_avatar">
-                <div class="user-component_text">
-                    <h4 class="user-component_title">Kevin</h4>
-                    <h6 class="user-component_subtitle">Please check My Kakao Account Info</h6>
+        <ul class="settings-list">
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Notices</span>
                 </div>
-    
-            </div>
-            <div class="user-component_column">
-                <span class="user-component_time">21:22</span>
-                <div class="badge">1</div>
-            </div>
-        </div>
-        </a>
+                <div class="settings__setting-column"></div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fa-solid fa-flask"></i>
+                    <span>Kakao Lab</span>
+                </div>
+                <div class="settings__setting-column"></div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings__setting-column">Latest Version</div>
+            </li>
+
+
+
+            
+            <li class="settings__setting"></li>
+            <li class="settings__setting"></li>
+            <li class="settings__setting"></li>
+        </ul>
     </main>
 
 
@@ -68,7 +86,7 @@
             <li class="nav_btn">
                 <a class="nav_link" href="chats.html">
                     <span class="nav_notification badge">1</span>
-                    <i class="fa-solid fa-comment fa-2x"></i></a>
+                    <i class="fa-regular fa-comment fa-2x"></i></a>
             </li>
             <li class="nav_btn">
                 <a class="nav_link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>

@@ -56,17 +56,6 @@
     display: block;
 }
 
-.user-component_warning{
-    border: 1px solid red;
-    color: red;
-    border-radius: 100%;
-    padding: 1px 5px;
-    margin-left: 1px;
-    font-size: 12px;
-    font-weight: 600;
-    
-}
-
 .user-component_subtitle i{
     border: 1px solid red;
     color: red;
