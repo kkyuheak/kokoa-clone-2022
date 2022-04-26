@@ -1,12 +1,152 @@
 #chat-screen{
     background-color: #abc1d1;
+    height: 11000vh;
 }
 
-.bars{
-    margin-left: 15px;
+
+#chat-screen .alt-header{
+    z-index: 1;
+    background-color: #abc1d1;
+    top: 10px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.alt-header_____title{
+#chat-screen .status-bar{
+    background-color: #abc1d1;
+    z-index: 2;
+}
+
+.main-chat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.chat_timestamp{
+    font-size: 13px;
+    color: white;
+    background-color: #92a4b2;
+    padding: 11px 15px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.message-row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.message-row img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.message_author{
+    opacity: 0.8;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.message_bubble{
+    background-color: white;
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+
+.message_info{
+    display: flex;
+    align-items: flex-end;
+}
+
+.message_time{
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.message-row--own{
+    justify-content: flex-end;
+}
+
+.message-row--own .message_bubble{
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.message-row--own .message_info{
+    flex-direction: row-reverse;
+}
+
+.reply{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    box-sizing: border-box;
+}
+
+.reply .reply_column:first-child{
+    width: 10%;
+    
+}
+
+.reply .reply_column:last-child{
+    width: 90%;
     position: relative;
-    left: 17px;
+}
+
+.reply input{
+    padding: 12px;
+    width: 100%;
+    border:var(--main-border);
+    border-radius: 20px;
+}
+
+.reply_column:last-child > i, 
+.reply_column:last-child button{
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+
+.reply_column:last-child > i{
+    right: 20px;
+    top: 19px;
+}
+
+.reply_column button{
+    background-color: var(--yellow);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.reply_column button i {
+    opacity: 1;
+}
+
+.reply_column button:focus,
+.reply_column button:active{
+    outline: none;
+}
+
+.reply i{
+    opacity: 0.5;
 }
